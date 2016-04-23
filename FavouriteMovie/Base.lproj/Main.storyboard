@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10102" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10080"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -42,22 +41,16 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="118"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qad-ei-s8W">
-                                                    <rect key="frame" x="8" y="8" width="137" height="101"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="137" id="Exr-iZ-5hc"/>
-                                                    </constraints>
-                                                </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Movie Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="16" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PrN-Gh-cjX">
                                                     <rect key="frame" x="153" y="8" width="439" height="30"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Movie Descp" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="8" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gMd-qY-BEp" userLabel="Movie Descp">
                                                     <rect key="frame" x="153" y="41" width="447" height="35"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="19"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                                    <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Movie Link" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zbm-xa-L5R">
@@ -66,6 +59,12 @@
                                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qad-ei-s8W">
+                                                    <rect key="frame" x="8" y="8" width="137" height="101"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="137" id="Exr-iZ-5hc"/>
+                                                    </constraints>
+                                                </imageView>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="bottomMargin" secondItem="qad-ei-s8W" secondAttribute="bottom" constant="1" id="X8K-eu-WX0"/>
@@ -84,6 +83,9 @@
                                     <constraint firstAttribute="width" constant="75" id="bHp-1R-NhE"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="Add Button"/>
+                                <connections>
+                                    <segue destination="M8d-sp-UYI" kind="show" id="Sgx-xc-hI0"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -105,12 +107,119 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="398" y="353"/>
+            <point key="canvasLocation" x="-1820" y="-663"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="L0m-x4-K5D">
+            <objects>
+                <viewController id="M8d-sp-UYI" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="X7A-Qd-c7L"/>
+                        <viewControllerLayoutGuide type="bottom" id="GyK-Vh-Z0Y"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uaU-Sm-Czl">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CreateMovieBG" translatesAutoresizingMaskIntoConstraints="NO" id="nKg-4N-kJc">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f25-fq-v5g">
+                                <rect key="frame" x="20" y="20" width="78" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="bDh-yw-wbc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="0.97098786765183609" green="1" blue="0.94606799227960647" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Movie Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vmh-An-QQJ">
+                                <rect key="frame" x="20" y="77" width="560" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="jav-I8-xkB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Movie Description" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="S0x-pc-bSn">
+                                <rect key="frame" x="20" y="139" width="560" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="3OB-jL-Gup"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Movie Plot" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o0M-9u-qip">
+                                <rect key="frame" x="20" y="206" width="560" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="EQ3-rk-5jk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="IMDB Url" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HTA-OJ-5gu">
+                                <rect key="frame" x="20" y="276" width="560" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="6Xy-xt-veX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bIu-eT-BfD">
+                                <rect key="frame" x="151" y="535" width="299" height="45"/>
+                                <color key="backgroundColor" red="0.41628141664000196" green="1" blue="0.14655400638306759" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="299" id="A6b-Bq-tZ3"/>
+                                    <constraint firstAttribute="height" constant="45" id="Fgi-or-bHc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="25"/>
+                                <state key="normal" title="Create Movie">
+                                    <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="movie_and_popcorn" translatesAutoresizingMaskIntoConstraints="NO" id="Te9-Hn-qb1" userLabel="Add Movie Image">
+                                <rect key="frame" x="250" y="404" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="5qw-HG-1oo"/>
+                                    <constraint firstAttribute="width" constant="100" id="tr4-Sb-20O"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vmh-An-QQJ" firstAttribute="leading" secondItem="uaU-Sm-Czl" secondAttribute="leadingMargin" id="01C-Q9-czq"/>
+                            <constraint firstItem="bIu-eT-BfD" firstAttribute="centerX" secondItem="uaU-Sm-Czl" secondAttribute="centerX" id="2Hu-5A-glX"/>
+                            <constraint firstItem="S0x-pc-bSn" firstAttribute="leading" secondItem="uaU-Sm-Czl" secondAttribute="leadingMargin" id="4bi-hF-7Pt"/>
+                            <constraint firstItem="o0M-9u-qip" firstAttribute="trailing" secondItem="uaU-Sm-Czl" secondAttribute="trailingMargin" id="4tb-QD-IhZ"/>
+                            <constraint firstItem="HTA-OJ-5gu" firstAttribute="leading" secondItem="uaU-Sm-Czl" secondAttribute="leadingMargin" id="5Zm-MT-ddA"/>
+                            <constraint firstItem="o0M-9u-qip" firstAttribute="top" secondItem="S0x-pc-bSn" secondAttribute="bottom" constant="37" id="Atx-pL-0sV"/>
+                            <constraint firstItem="bIu-eT-BfD" firstAttribute="top" secondItem="Te9-Hn-qb1" secondAttribute="bottom" constant="31" id="Fsp-Bg-m0G"/>
+                            <constraint firstItem="S0x-pc-bSn" firstAttribute="trailing" secondItem="uaU-Sm-Czl" secondAttribute="trailingMargin" id="LnX-0t-cQX"/>
+                            <constraint firstItem="S0x-pc-bSn" firstAttribute="top" secondItem="vmh-An-QQJ" secondAttribute="bottom" constant="32" id="OoI-aO-jjk"/>
+                            <constraint firstItem="vmh-An-QQJ" firstAttribute="trailing" secondItem="uaU-Sm-Czl" secondAttribute="trailingMargin" id="TKy-LZ-PDs"/>
+                            <constraint firstItem="Te9-Hn-qb1" firstAttribute="centerX" secondItem="uaU-Sm-Czl" secondAttribute="centerX" id="kY2-ut-2Fd"/>
+                            <constraint firstItem="GyK-Vh-Z0Y" firstAttribute="top" secondItem="bIu-eT-BfD" secondAttribute="bottom" constant="20" id="lJE-A3-TsJ"/>
+                            <constraint firstItem="f25-fq-v5g" firstAttribute="leading" secondItem="uaU-Sm-Czl" secondAttribute="leadingMargin" id="lj5-Zg-HPe"/>
+                            <constraint firstItem="vmh-An-QQJ" firstAttribute="top" secondItem="f25-fq-v5g" secondAttribute="bottom" constant="27" id="nOF-0j-XwM"/>
+                            <constraint firstItem="f25-fq-v5g" firstAttribute="top" secondItem="X7A-Qd-c7L" secondAttribute="bottom" id="nOT-iR-Kfx"/>
+                            <constraint firstItem="Te9-Hn-qb1" firstAttribute="centerX" secondItem="uaU-Sm-Czl" secondAttribute="centerX" id="qNT-nf-pdj"/>
+                            <constraint firstItem="o0M-9u-qip" firstAttribute="leading" secondItem="uaU-Sm-Czl" secondAttribute="leadingMargin" id="rzW-m2-Oqb"/>
+                            <constraint firstItem="HTA-OJ-5gu" firstAttribute="top" secondItem="o0M-9u-qip" secondAttribute="bottom" constant="40" id="waX-m2-d5Q"/>
+                            <constraint firstItem="HTA-OJ-5gu" firstAttribute="trailing" secondItem="uaU-Sm-Czl" secondAttribute="trailingMargin" id="zbS-zg-JPF"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MN7-Wq-kpr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1115" y="-160"/>
         </scene>
     </scenes>
     <resources>
         <image name="Add Button" width="512" height="512"/>
+        <image name="CreateMovieBG" width="3888" height="2592"/>
         <image name="Favourite-Movies" width="563" height="83"/>
         <image name="Movie-theater" width="3500" height="2329"/>
+        <image name="movie_and_popcorn" width="1000" height="826"/>
     </resources>
 </document>
