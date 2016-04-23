@@ -56,15 +56,39 @@
 		A0E06A851CCBF84E0057E5B9 /* FavouriteMovie */ = {
 			isa = PBXGroup;
 			children = (
+				A0E06A9D1CCBF8EB0057E5B9 /* Controller */,
+				A0E06A9C1CCBF8D80057E5B9 /* View */,
+				A0E06A9B1CCBF8D00057E5B9 /* Model */,
 				A0E06A861CCBF84E0057E5B9 /* AppDelegate.swift */,
-				A0E06A881CCBF84E0057E5B9 /* ViewController.swift */,
-				A0E06A8A1CCBF84E0057E5B9 /* Main.storyboard */,
 				A0E06A901CCBF84E0057E5B9 /* Assets.xcassets */,
 				A0E06A921CCBF84E0057E5B9 /* LaunchScreen.storyboard */,
 				A0E06A951CCBF84E0057E5B9 /* Info.plist */,
 				A0E06A8D1CCBF84E0057E5B9 /* FavouriteMovie.xcdatamodeld */,
 			);
 			path = FavouriteMovie;
+			sourceTree = "<group>";
+		};
+		A0E06A9B1CCBF8D00057E5B9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		A0E06A9C1CCBF8D80057E5B9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A0E06A8A1CCBF84E0057E5B9 /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		A0E06A9D1CCBF8EB0057E5B9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A0E06A881CCBF84E0057E5B9 /* ViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,6 +315,7 @@
 				A0E06A9A1CCBF84E0057E5B9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
