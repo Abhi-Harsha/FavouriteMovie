@@ -24,12 +24,6 @@
                                     <constraint firstAttribute="height" constant="75" id="CIJ-Xv-hWY"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Favourite-Movies" translatesAutoresizingMaskIntoConstraints="NO" id="AlG-ot-lQC">
-                                <rect key="frame" x="20" y="3" width="560" height="69"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="69" id="erK-7f-Pwf"/>
-                                </constraints>
-                            </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="119" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="eD5-RO-XSW">
                                 <rect key="frame" x="0.0" y="75" width="600" height="525"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -73,6 +67,9 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.1324176384955511" green="1" blue="0.044297267666321916" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <segue destination="vyr-T1-S7J" kind="show" id="gsH-kz-mlF"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -87,6 +84,12 @@
                                     <segue destination="M8d-sp-UYI" kind="show" id="Sgx-xc-hI0"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Favourite-Movies" translatesAutoresizingMaskIntoConstraints="NO" id="AlG-ot-lQC">
+                                <rect key="frame" x="20" y="3" width="560" height="69"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="69" id="erK-7f-Pwf"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -107,7 +110,48 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1820" y="-663"/>
+            <point key="canvasLocation" x="-2190" y="-711"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="hGo-sk-QHQ">
+            <objects>
+                <viewController id="vyr-T1-S7J" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="u8p-IO-9Rt"/>
+                        <viewControllerLayoutGuide type="bottom" id="Vyx-OP-3Oq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NLf-Nq-MwJ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Movie-theater" translatesAutoresizingMaskIntoConstraints="NO" id="fYZ-z9-0a5" userLabel="MovieDetailsTopImage">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="75"/>
+                                <color key="backgroundColor" red="0.99476439790000004" green="0.99476439790000004" blue="0.99476439790000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="BOM-4Y-bK6"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Movie-Details" translatesAutoresizingMaskIntoConstraints="NO" id="PZs-iN-7EJ">
+                                <rect key="frame" x="20" y="3" width="560" height="69"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="69" id="7DK-7F-GL7"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="fYZ-z9-0a5" secondAttribute="trailing" id="BUl-1p-kIZ"/>
+                            <constraint firstItem="PZs-iN-7EJ" firstAttribute="leading" secondItem="NLf-Nq-MwJ" secondAttribute="leadingMargin" id="E2X-Tt-Yf0"/>
+                            <constraint firstItem="PZs-iN-7EJ" firstAttribute="centerY" secondItem="fYZ-z9-0a5" secondAttribute="centerY" id="HfA-5e-HwS"/>
+                            <constraint firstItem="PZs-iN-7EJ" firstAttribute="trailing" secondItem="NLf-Nq-MwJ" secondAttribute="trailingMargin" id="OMC-Rx-AdG"/>
+                            <constraint firstItem="fYZ-z9-0a5" firstAttribute="top" secondItem="NLf-Nq-MwJ" secondAttribute="top" id="YCD-cC-HuO"/>
+                            <constraint firstItem="fYZ-z9-0a5" firstAttribute="leading" secondItem="NLf-Nq-MwJ" secondAttribute="leading" id="iIG-zt-U3g"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="emW-1T-6dw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1526" y="-689"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="L0m-x4-K5D">
@@ -185,6 +229,13 @@
                                     <constraint firstAttribute="width" constant="100" id="tr4-Sb-20O"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gzK-eu-R16">
+                                <rect key="frame" x="245" y="404" width="105" height="100"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="Add Image">
+                                    <color key="titleColor" red="0.12228190939091987" green="0.21269533358072135" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -194,10 +245,13 @@
                             <constraint firstItem="o0M-9u-qip" firstAttribute="trailing" secondItem="uaU-Sm-Czl" secondAttribute="trailingMargin" id="4tb-QD-IhZ"/>
                             <constraint firstItem="HTA-OJ-5gu" firstAttribute="leading" secondItem="uaU-Sm-Czl" secondAttribute="leadingMargin" id="5Zm-MT-ddA"/>
                             <constraint firstItem="o0M-9u-qip" firstAttribute="top" secondItem="S0x-pc-bSn" secondAttribute="bottom" constant="37" id="Atx-pL-0sV"/>
+                            <constraint firstItem="Te9-Hn-qb1" firstAttribute="centerY" secondItem="gzK-eu-R16" secondAttribute="centerY" id="Ert-JM-R9u"/>
                             <constraint firstItem="bIu-eT-BfD" firstAttribute="top" secondItem="Te9-Hn-qb1" secondAttribute="bottom" constant="31" id="Fsp-Bg-m0G"/>
                             <constraint firstItem="S0x-pc-bSn" firstAttribute="trailing" secondItem="uaU-Sm-Czl" secondAttribute="trailingMargin" id="LnX-0t-cQX"/>
+                            <constraint firstItem="Te9-Hn-qb1" firstAttribute="height" secondItem="gzK-eu-R16" secondAttribute="height" id="Oa4-ne-DvT"/>
                             <constraint firstItem="S0x-pc-bSn" firstAttribute="top" secondItem="vmh-An-QQJ" secondAttribute="bottom" constant="32" id="OoI-aO-jjk"/>
                             <constraint firstItem="vmh-An-QQJ" firstAttribute="trailing" secondItem="uaU-Sm-Czl" secondAttribute="trailingMargin" id="TKy-LZ-PDs"/>
+                            <constraint firstItem="Te9-Hn-qb1" firstAttribute="width" secondItem="gzK-eu-R16" secondAttribute="width" id="i3I-Ub-Po4"/>
                             <constraint firstItem="Te9-Hn-qb1" firstAttribute="centerX" secondItem="uaU-Sm-Czl" secondAttribute="centerX" id="kY2-ut-2Fd"/>
                             <constraint firstItem="GyK-Vh-Z0Y" firstAttribute="top" secondItem="bIu-eT-BfD" secondAttribute="bottom" constant="20" id="lJE-A3-TsJ"/>
                             <constraint firstItem="f25-fq-v5g" firstAttribute="leading" secondItem="uaU-Sm-Czl" secondAttribute="leadingMargin" id="lj5-Zg-HPe"/>
@@ -205,6 +259,7 @@
                             <constraint firstItem="f25-fq-v5g" firstAttribute="top" secondItem="X7A-Qd-c7L" secondAttribute="bottom" id="nOT-iR-Kfx"/>
                             <constraint firstItem="Te9-Hn-qb1" firstAttribute="centerX" secondItem="uaU-Sm-Czl" secondAttribute="centerX" id="qNT-nf-pdj"/>
                             <constraint firstItem="o0M-9u-qip" firstAttribute="leading" secondItem="uaU-Sm-Czl" secondAttribute="leadingMargin" id="rzW-m2-Oqb"/>
+                            <constraint firstItem="Te9-Hn-qb1" firstAttribute="centerX" secondItem="gzK-eu-R16" secondAttribute="centerX" id="uRj-ap-3qo"/>
                             <constraint firstItem="HTA-OJ-5gu" firstAttribute="top" secondItem="o0M-9u-qip" secondAttribute="bottom" constant="40" id="waX-m2-d5Q"/>
                             <constraint firstItem="HTA-OJ-5gu" firstAttribute="trailing" secondItem="uaU-Sm-Czl" secondAttribute="trailingMargin" id="zbS-zg-JPF"/>
                         </constraints>
@@ -212,13 +267,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MN7-Wq-kpr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1115" y="-160"/>
+            <point key="canvasLocation" x="-1491" y="14"/>
         </scene>
     </scenes>
     <resources>
         <image name="Add Button" width="512" height="512"/>
         <image name="CreateMovieBG" width="3888" height="2592"/>
         <image name="Favourite-Movies" width="563" height="83"/>
+        <image name="Movie-Details" width="452" height="80"/>
         <image name="Movie-theater" width="3500" height="2329"/>
         <image name="movie_and_popcorn" width="1000" height="826"/>
     </resources>
