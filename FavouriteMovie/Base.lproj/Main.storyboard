@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10102" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10102" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vyr-T1-S7J">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10080"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -137,16 +137,139 @@
                                     <constraint firstAttribute="height" constant="69" id="7DK-7F-GL7"/>
                                 </constraints>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Shawshank" translatesAutoresizingMaskIntoConstraints="NO" id="d8B-kY-fdi">
+                                <rect key="frame" x="0.0" y="80" width="201" height="249"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="249" id="A7t-AA-w5D"/>
+                                    <constraint firstAttribute="width" constant="150" id="v1e-np-6MO"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Movie Plot" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M4g-vB-91P">
+                                <rect key="frame" x="20" y="321" width="238" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="0tl-je-kEU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="25"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Movie Link" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ckx-T1-IH8">
+                                <rect key="frame" x="20" y="472" width="238" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="sXL-vG-6uK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="27"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency." lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Ia1-rR-zlo">
+                                <rect key="frame" x="192" y="213" width="408" height="126"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="134" id="ljF-c7-mFo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="The Shawshank Redemption" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tdb-yE-Dfw">
+                                <rect key="frame" x="201" y="111" width="408" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="5Py-40-tOg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="http://www.imdb.com/title/tt0111161/" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="5zj-m1-ksf">
+                                <rect key="frame" x="20" y="498" width="560" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="7Yz-5K-iWh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Movie Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zda-Kx-4RA">
+                                <rect key="frame" x="201" y="88" width="408" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="2H9-a3-npg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Movie" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3rF-ou-0la">
+                                <rect key="frame" x="192" y="161" width="408" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="VBJ-JJ-lK2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Description" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gd4-6h-ZqA">
+                                <rect key="frame" x="192" y="190" width="408" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="p5P-Jb-HMN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="X8f-8r-M26">
+                                <rect key="frame" x="20" y="350" width="560" height="114"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="114" id="ybC-cX-ykU"/>
+                                </constraints>
+                                <string key="text">Chronicles the experiences of a formerly successful banker as a prisoner in the gloomy jailhouse of Shawshank after being found guilty of a crime he claims he did not commit. The film portrays the man's unique way of dealing with his new, torturous life; along the way he befriends a number of fellow prisoners, most notably a wise long-term inmate named Red. Written by J-S-Golden</string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Gd4-6h-ZqA" firstAttribute="top" secondItem="3rF-ou-0la" secondAttribute="bottom" constant="3" id="170-fO-HBV"/>
+                            <constraint firstItem="d8B-kY-fdi" firstAttribute="leading" secondItem="NLf-Nq-MwJ" secondAttribute="leading" constant="5" id="1dw-CP-evF"/>
+                            <constraint firstItem="5zj-m1-ksf" firstAttribute="top" secondItem="Ckx-T1-IH8" secondAttribute="bottom" constant="5" id="2pe-Ww-Uvh"/>
+                            <constraint firstItem="zda-Kx-4RA" firstAttribute="trailing" secondItem="NLf-Nq-MwJ" secondAttribute="trailingMargin" id="35K-lZ-GZO"/>
+                            <constraint firstItem="tdb-yE-Dfw" firstAttribute="leading" secondItem="d8B-kY-fdi" secondAttribute="trailing" constant="22" id="4vQ-Nt-XEP"/>
+                            <constraint firstItem="Gd4-6h-ZqA" firstAttribute="leading" secondItem="NLf-Nq-MwJ" secondAttribute="leadingMargin" constant="161" id="BJK-oK-eOf"/>
                             <constraint firstAttribute="trailing" secondItem="fYZ-z9-0a5" secondAttribute="trailing" id="BUl-1p-kIZ"/>
+                            <constraint firstItem="tdb-yE-Dfw" firstAttribute="trailing" secondItem="NLf-Nq-MwJ" secondAttribute="trailingMargin" id="CZf-XW-EnR"/>
+                            <constraint firstItem="X8f-8r-M26" firstAttribute="top" secondItem="M4g-vB-91P" secondAttribute="bottom" constant="8" id="Cde-lu-VSk"/>
                             <constraint firstItem="PZs-iN-7EJ" firstAttribute="leading" secondItem="NLf-Nq-MwJ" secondAttribute="leadingMargin" id="E2X-Tt-Yf0"/>
                             <constraint firstItem="PZs-iN-7EJ" firstAttribute="centerY" secondItem="fYZ-z9-0a5" secondAttribute="centerY" id="HfA-5e-HwS"/>
+                            <constraint firstItem="M4g-vB-91P" firstAttribute="top" secondItem="Ia1-rR-zlo" secondAttribute="bottom" constant="5" id="O8C-HW-KFG"/>
+                            <constraint firstItem="Ia1-rR-zlo" firstAttribute="top" secondItem="tdb-yE-Dfw" secondAttribute="bottom" constant="37" id="ODF-xM-fh1"/>
                             <constraint firstItem="PZs-iN-7EJ" firstAttribute="trailing" secondItem="NLf-Nq-MwJ" secondAttribute="trailingMargin" id="OMC-Rx-AdG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ckx-T1-IH8" secondAttribute="trailing" constant="322" id="RuA-J7-3VO"/>
+                            <constraint firstItem="X8f-8r-M26" firstAttribute="trailing" secondItem="NLf-Nq-MwJ" secondAttribute="trailingMargin" id="SIU-jJ-oyn"/>
+                            <constraint firstItem="5zj-m1-ksf" firstAttribute="trailing" secondItem="NLf-Nq-MwJ" secondAttribute="trailingMargin" id="U9T-5x-Txw"/>
                             <constraint firstItem="fYZ-z9-0a5" firstAttribute="top" secondItem="NLf-Nq-MwJ" secondAttribute="top" id="YCD-cC-HuO"/>
+                            <constraint firstItem="3rF-ou-0la" firstAttribute="trailing" secondItem="NLf-Nq-MwJ" secondAttribute="trailingMargin" id="dHK-nL-2bu"/>
+                            <constraint firstItem="Ia1-rR-zlo" firstAttribute="trailing" secondItem="NLf-Nq-MwJ" secondAttribute="trailingMargin" id="em4-pd-NeV"/>
+                            <constraint firstItem="zda-Kx-4RA" firstAttribute="leading" secondItem="d8B-kY-fdi" secondAttribute="trailing" constant="22" id="gJG-PL-DyN"/>
+                            <constraint firstItem="3rF-ou-0la" firstAttribute="top" secondItem="tdb-yE-Dfw" secondAttribute="bottom" constant="5" id="gsr-jV-KcN"/>
+                            <constraint firstItem="zda-Kx-4RA" firstAttribute="top" secondItem="fYZ-z9-0a5" secondAttribute="bottom" constant="5" id="h7n-R0-QRe"/>
                             <constraint firstItem="fYZ-z9-0a5" firstAttribute="leading" secondItem="NLf-Nq-MwJ" secondAttribute="leading" id="iIG-zt-U3g"/>
+                            <constraint firstItem="tdb-yE-Dfw" firstAttribute="top" secondItem="zda-Kx-4RA" secondAttribute="bottom" constant="3" id="m7c-db-0Fh"/>
+                            <constraint firstItem="X8f-8r-M26" firstAttribute="leading" secondItem="NLf-Nq-MwJ" secondAttribute="leadingMargin" id="n38-gP-kn4"/>
+                            <constraint firstItem="5zj-m1-ksf" firstAttribute="leading" secondItem="NLf-Nq-MwJ" secondAttribute="leadingMargin" id="p5R-kq-4cu"/>
+                            <constraint firstItem="M4g-vB-91P" firstAttribute="leading" secondItem="NLf-Nq-MwJ" secondAttribute="leadingMargin" id="p8H-6C-Llp"/>
+                            <constraint firstItem="3rF-ou-0la" firstAttribute="leading" secondItem="d8B-kY-fdi" secondAttribute="trailing" constant="22" id="sRy-TI-lbO"/>
+                            <constraint firstItem="Ckx-T1-IH8" firstAttribute="top" secondItem="X8f-8r-M26" secondAttribute="bottom" constant="8" id="svL-UI-SQn"/>
+                            <constraint firstItem="d8B-kY-fdi" firstAttribute="top" secondItem="fYZ-z9-0a5" secondAttribute="bottom" id="tQg-xJ-R6C"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="M4g-vB-91P" secondAttribute="trailing" constant="322" id="xrH-T1-G0d"/>
+                            <constraint firstItem="Ia1-rR-zlo" firstAttribute="leading" secondItem="d8B-kY-fdi" secondAttribute="trailing" constant="22" id="xvh-Tq-R2p"/>
+                            <constraint firstItem="Ckx-T1-IH8" firstAttribute="leading" secondItem="NLf-Nq-MwJ" secondAttribute="leadingMargin" id="zxq-Qh-Bnt"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="xrH-T1-G0d"/>
+                                <exclude reference="RuA-J7-3VO"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="emW-1T-6dw" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -276,6 +399,7 @@
         <image name="Favourite-Movies" width="563" height="83"/>
         <image name="Movie-Details" width="452" height="80"/>
         <image name="Movie-theater" width="3500" height="2329"/>
+        <image name="Shawshank" width="327" height="480"/>
         <image name="movie_and_popcorn" width="1000" height="826"/>
     </resources>
 </document>
