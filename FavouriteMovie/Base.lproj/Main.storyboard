@@ -24,17 +24,6 @@
                                     <constraint firstAttribute="height" constant="75" id="CIJ-Xv-hWY"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleAspectFit" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AfG-MW-ZSP" userLabel="Add Button">
-                                <rect key="frame" x="250" y="480" width="100" height="100"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="75" id="HK2-ja-Oza"/>
-                                    <constraint firstAttribute="width" constant="75" id="bHp-1R-NhE"/>
-                                </constraints>
-                                <state key="normal" title="Button" image="Add Button"/>
-                                <connections>
-                                    <segue destination="M8d-sp-UYI" kind="show" id="Sgx-xc-hI0"/>
-                                </connections>
-                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Favourite-Movies" translatesAutoresizingMaskIntoConstraints="NO" id="AlG-ot-lQC">
                                 <rect key="frame" x="20" y="3" width="560" height="69"/>
                                 <constraints>
@@ -45,7 +34,7 @@
                                 <rect key="frame" x="0.0" y="75" width="600" height="525"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="119" id="HFo-vJ-MQx">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MovieCell" rowHeight="119" id="HFo-vJ-MQx" customClass="MovieCell" customModule="FavouriteMovie" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="600" height="119"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HFo-vJ-MQx" id="mds-Se-BRg">
@@ -83,13 +72,28 @@
                                                 <constraint firstItem="qad-ei-s8W" firstAttribute="leading" secondItem="mds-Se-BRg" secondAttribute="leadingMargin" id="oNO-02-N2k"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.1324176384955511" green="1" blue="0.044297267666321916" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
+                                            <outlet property="movieDesription" destination="gMd-qY-BEp" id="142-nQ-3Mj"/>
+                                            <outlet property="movieImage" destination="qad-ei-s8W" id="jKp-Zn-yRg"/>
+                                            <outlet property="movieLink" destination="Zbm-xa-L5R" id="A1J-8j-mvX"/>
+                                            <outlet property="movieTitle" destination="PrN-Gh-cjX" id="WOa-e8-qfy"/>
                                             <segue destination="vyr-T1-S7J" kind="show" id="gsH-kz-mlF"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleAspectFit" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AfG-MW-ZSP" userLabel="Add Button">
+                                <rect key="frame" x="250" y="480" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="HK2-ja-Oza"/>
+                                    <constraint firstAttribute="width" constant="75" id="bHp-1R-NhE"/>
+                                </constraints>
+                                <state key="normal" image="Add Button"/>
+                                <connections>
+                                    <segue destination="M8d-sp-UYI" kind="show" id="Sgx-xc-hI0"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -110,7 +114,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2718" y="-1367"/>
+            <point key="canvasLocation" x="-2777" y="-1387"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="hGo-sk-QHQ">
@@ -269,7 +273,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="emW-1T-6dw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1946" y="-1367"/>
+            <point key="canvasLocation" x="-2028" y="-1379"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tcz-Oe-Ary">
@@ -425,7 +429,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MN7-Wq-kpr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2679" y="-618"/>
+            <point key="canvasLocation" x="-2849" y="-618"/>
         </scene>
     </scenes>
     <resources>
