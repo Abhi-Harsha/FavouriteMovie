@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A0726A521CD910F300FEE6E2 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0726A511CD910F300FEE6E2 /* MovieCell.swift */; };
+		A0BD66111CD9CB9400E7A3C4 /* CreateMovieVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BD66101CD9CB9400E7A3C4 /* CreateMovieVC.swift */; };
 		A0E06A871CCBF84E0057E5B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E06A861CCBF84E0057E5B9 /* AppDelegate.swift */; };
 		A0E06A891CCBF84E0057E5B9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E06A881CCBF84E0057E5B9 /* ViewController.swift */; };
 		A0E06A8C1CCBF84E0057E5B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0E06A8A1CCBF84E0057E5B9 /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		A0726A511CD910F300FEE6E2 /* MovieCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
+		A0BD66101CD9CB9400E7A3C4 /* CreateMovieVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateMovieVC.swift; sourceTree = "<group>"; };
 		A0E06A831CCBF84E0057E5B9 /* FavouriteMovie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FavouriteMovie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0E06A861CCBF84E0057E5B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0E06A881CCBF84E0057E5B9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				A0E06A881CCBF84E0057E5B9 /* ViewController.swift */,
+				A0BD66101CD9CB9400E7A3C4 /* CreateMovieVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -175,6 +178,7 @@
 				A0FB61C91CD1478200AFBA24 /* Movie+CoreDataProperties.swift in Sources */,
 				A0E06A891CCBF84E0057E5B9 /* ViewController.swift in Sources */,
 				A0726A521CD910F300FEE6E2 /* MovieCell.swift in Sources */,
+				A0BD66111CD9CB9400E7A3C4 /* CreateMovieVC.swift in Sources */,
 				A0E06A8F1CCBF84E0057E5B9 /* FavouriteMovie.xcdatamodeld in Sources */,
 				A0E06A871CCBF84E0057E5B9 /* AppDelegate.swift in Sources */,
 				A0FB61CA1CD1478200AFBA24 /* Movie.swift in Sources */,

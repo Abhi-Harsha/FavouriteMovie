@@ -315,10 +315,10 @@
             </objects>
             <point key="canvasLocation" x="-1227" y="-1367"/>
         </scene>
-        <!--View Controller-->
+        <!--Create Movie-->
         <scene sceneID="L0m-x4-K5D">
             <objects>
-                <viewController id="M8d-sp-UYI" sceneMemberID="viewController">
+                <viewController id="M8d-sp-UYI" customClass="CreateMovie" customModule="FavouriteMovie" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="X7A-Qd-c7L"/>
                         <viewControllerLayoutGuide type="bottom" id="GyK-Vh-Z0Y"/>
@@ -426,10 +426,17 @@
                             <constraint firstItem="HTA-OJ-5gu" firstAttribute="trailing" secondItem="uaU-Sm-Czl" secondAttribute="trailingMargin" id="zbS-zg-JPF"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="mvImage" destination="Te9-Hn-qb1" id="NfW-g3-Hsq"/>
+                        <outlet property="mvdescription" destination="S0x-pc-bSn" id="moW-ov-f47"/>
+                        <outlet property="mvlink" destination="HTA-OJ-5gu" id="lIb-6r-vRv"/>
+                        <outlet property="mvplot" destination="o0M-9u-qip" id="h3e-FX-gR9"/>
+                        <outlet property="mvtitle" destination="vmh-An-QQJ" id="Ae3-dI-zhf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MN7-Wq-kpr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2849" y="-618"/>
+            <point key="canvasLocation" x="-2646" y="-754"/>
         </scene>
     </scenes>
     <resources>
