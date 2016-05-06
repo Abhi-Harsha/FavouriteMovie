@@ -43,7 +43,7 @@ class ViewController: UIViewController , UITableViewDelegate, UITableViewDataSou
 
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return movies.count
     }
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {

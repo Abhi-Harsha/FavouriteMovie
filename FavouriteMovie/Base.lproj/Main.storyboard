@@ -41,8 +41,11 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="118"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Movie Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="16" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PrN-Gh-cjX">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Movie Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="16" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PrN-Gh-cjX">
                                                     <rect key="frame" x="153" y="8" width="439" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="20" id="ZgI-im-AlB"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -60,16 +63,19 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qad-ei-s8W">
-                                                    <rect key="frame" x="8" y="8" width="137" height="101"/>
+                                                    <rect key="frame" x="8" y="8" width="80" height="101"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="137" id="Exr-iZ-5hc"/>
+                                                        <constraint firstAttribute="width" constant="80" id="Exr-iZ-5hc"/>
                                                     </constraints>
                                                 </imageView>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="bottomMargin" secondItem="qad-ei-s8W" secondAttribute="bottom" constant="1" id="X8K-eu-WX0"/>
+                                                <constraint firstItem="PrN-Gh-cjX" firstAttribute="centerX" secondItem="mds-Se-BRg" secondAttribute="centerX" id="fxR-kx-wr1"/>
                                                 <constraint firstItem="qad-ei-s8W" firstAttribute="top" secondItem="mds-Se-BRg" secondAttribute="topMargin" id="hbj-HE-pUt"/>
                                                 <constraint firstItem="qad-ei-s8W" firstAttribute="leading" secondItem="mds-Se-BRg" secondAttribute="leadingMargin" id="oNO-02-N2k"/>
+                                                <constraint firstItem="PrN-Gh-cjX" firstAttribute="trailing" secondItem="mds-Se-BRg" secondAttribute="trailingMargin" id="oTJ-IQ-fZ7"/>
+                                                <constraint firstItem="PrN-Gh-cjX" firstAttribute="leading" secondItem="qad-ei-s8W" secondAttribute="trailing" constant="20" id="sds-pP-yJn"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -376,6 +382,9 @@
                                 <state key="normal" title="Create Movie">
                                     <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="CreateNewMovie:" destination="M8d-sp-UYI" eventType="touchUpInside" id="D8j-yz-Qlc"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="movie_and_popcorn" translatesAutoresizingMaskIntoConstraints="NO" id="Te9-Hn-qb1" userLabel="Add Movie Image">
                                 <rect key="frame" x="250" y="404" width="100" height="100"/>
@@ -390,6 +399,9 @@
                                 <state key="normal" title="Add Image">
                                     <color key="titleColor" red="0.12228190939091987" green="0.21269533358072135" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="AddImage:" destination="M8d-sp-UYI" eventType="touchUpInside" id="CTg-pf-gDi"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f25-fq-v5g">
                                 <rect key="frame" x="20" y="20" width="78" height="30"/>
