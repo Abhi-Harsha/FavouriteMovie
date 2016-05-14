@@ -41,23 +41,20 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="118"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Movie Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="16" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PrN-Gh-cjX">
-                                                    <rect key="frame" x="153" y="8" width="439" height="30"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Movie Descp" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="8" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gMd-qY-BEp" userLabel="Movie Descp">
+                                                    <rect key="frame" x="96" y="41" width="496" height="35"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="20" id="ZgI-im-AlB"/>
+                                                        <constraint firstAttribute="height" constant="20" id="FbR-jc-yjx"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Movie Descp" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="8" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gMd-qY-BEp" userLabel="Movie Descp">
-                                                    <rect key="frame" x="153" y="41" width="447" height="35"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="19"/>
                                                     <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Movie Link" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zbm-xa-L5R">
-                                                    <rect key="frame" x="153" y="77" width="439" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Movie Link" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zbm-xa-L5R">
+                                                    <rect key="frame" x="96" y="79" width="496" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="15" id="J9H-Dx-mj5"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="15"/>
                                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
@@ -68,15 +65,40 @@
                                                         <constraint firstAttribute="width" constant="80" id="Exr-iZ-5hc"/>
                                                     </constraints>
                                                 </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Movie Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="16" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PrN-Gh-cjX">
+                                                    <rect key="frame" x="96" y="8" width="496" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="Yjz-Ed-ePP"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="Zbm-xa-L5R" firstAttribute="leading" secondItem="qad-ei-s8W" secondAttribute="trailing" constant="8" id="3L3-t3-lU2"/>
+                                                <constraint firstItem="PrN-Gh-cjX" firstAttribute="trailing" secondItem="mds-Se-BRg" secondAttribute="trailingMargin" id="98H-ba-p7o"/>
+                                                <constraint firstItem="gMd-qY-BEp" firstAttribute="top" secondItem="PrN-Gh-cjX" secondAttribute="bottom" constant="8" id="Fo2-wI-49j"/>
+                                                <constraint firstItem="gMd-qY-BEp" firstAttribute="leading" secondItem="qad-ei-s8W" secondAttribute="trailing" constant="8" id="Gwq-L4-mQE"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="qad-ei-s8W" secondAttribute="bottom" constant="1" id="X8K-eu-WX0"/>
+                                                <constraint firstItem="Zbm-xa-L5R" firstAttribute="trailing" secondItem="mds-Se-BRg" secondAttribute="trailingMargin" id="dXo-PP-5m3"/>
                                                 <constraint firstItem="PrN-Gh-cjX" firstAttribute="centerX" secondItem="mds-Se-BRg" secondAttribute="centerX" id="fxR-kx-wr1"/>
+                                                <constraint firstItem="Zbm-xa-L5R" firstAttribute="top" secondItem="gMd-qY-BEp" secondAttribute="bottom" constant="3" id="gdK-ye-Hpd"/>
+                                                <constraint firstItem="gMd-qY-BEp" firstAttribute="trailing" secondItem="mds-Se-BRg" secondAttribute="trailingMargin" id="hHu-SB-FwS"/>
                                                 <constraint firstItem="qad-ei-s8W" firstAttribute="top" secondItem="mds-Se-BRg" secondAttribute="topMargin" id="hbj-HE-pUt"/>
+                                                <constraint firstItem="PrN-Gh-cjX" firstAttribute="leading" secondItem="qad-ei-s8W" secondAttribute="trailing" constant="8" id="lNM-nk-nAW"/>
                                                 <constraint firstItem="qad-ei-s8W" firstAttribute="leading" secondItem="mds-Se-BRg" secondAttribute="leadingMargin" id="oNO-02-N2k"/>
                                                 <constraint firstItem="PrN-Gh-cjX" firstAttribute="trailing" secondItem="mds-Se-BRg" secondAttribute="trailingMargin" id="oTJ-IQ-fZ7"/>
+                                                <constraint firstItem="PrN-Gh-cjX" firstAttribute="top" secondItem="mds-Se-BRg" secondAttribute="topMargin" id="rNa-sX-LRU"/>
                                                 <constraint firstItem="PrN-Gh-cjX" firstAttribute="leading" secondItem="qad-ei-s8W" secondAttribute="trailing" constant="20" id="sds-pP-yJn"/>
                                             </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="98H-ba-p7o"/>
+                                                    <exclude reference="fxR-kx-wr1"/>
+                                                    <exclude reference="sds-pP-yJn"/>
+                                                </mask>
+                                            </variation>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
@@ -84,7 +106,7 @@
                                             <outlet property="movieImage" destination="qad-ei-s8W" id="jKp-Zn-yRg"/>
                                             <outlet property="movieLink" destination="Zbm-xa-L5R" id="A1J-8j-mvX"/>
                                             <outlet property="movieTitle" destination="PrN-Gh-cjX" id="WOa-e8-qfy"/>
-                                            <segue destination="vyr-T1-S7J" kind="show" id="gsH-kz-mlF"/>
+                                            <segue destination="vyr-T1-S7J" kind="show" identifier="Details" id="gsH-kz-mlF"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -123,12 +145,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2833" y="-1487"/>
+            <point key="canvasLocation" x="-2688" y="-1746"/>
         </scene>
-        <!--View Controller-->
+        <!--Movie DetailsVC-->
         <scene sceneID="hGo-sk-QHQ">
             <objects>
-                <viewController id="vyr-T1-S7J" sceneMemberID="viewController">
+                <viewController id="vyr-T1-S7J" customClass="MovieDetailsVC" customModule="FavouriteMovie" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="u8p-IO-9Rt"/>
                         <viewControllerLayoutGuide type="bottom" id="Vyx-OP-3Oq"/>
@@ -240,6 +262,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="15"/>
                                 <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="onBackPressed:" destination="vyr-T1-S7J" eventType="touchUpInside" id="U8l-Ou-zwa"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -279,10 +304,17 @@
                             <constraint firstItem="Jrf-rX-ugF" firstAttribute="trailing" secondItem="NLf-Nq-MwJ" secondAttribute="trailingMargin" id="zFO-9z-2Cf"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="desc" destination="HGK-OE-oYJ" id="85V-EM-4uI"/>
+                        <outlet property="image" destination="aSB-8f-wWO" id="fc3-st-z9P"/>
+                        <outlet property="link" destination="HFt-NA-LBE" id="kyV-LS-9at"/>
+                        <outlet property="mvtitle" destination="NLl-ZV-Wdd" id="i6n-J3-piB"/>
+                        <outlet property="plot" destination="5Lk-DU-9Jm" id="YqC-eg-iZ3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="emW-1T-6dw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2028" y="-1379"/>
+            <point key="canvasLocation" x="-2051" y="-1202"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tcz-Oe-Ary">

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A02856FC1CDE8C7500D8C706 /* MovieDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02856FB1CDE8C7500D8C706 /* MovieDetailsVC.swift */; };
+		A0721BC11CE7B66900D9BBCE /* MovieLinkVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0721BC01CE7B66900D9BBCE /* MovieLinkVC.swift */; };
 		A0726A521CD910F300FEE6E2 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0726A511CD910F300FEE6E2 /* MovieCell.swift */; };
 		A09326301CDA5E000049EE34 /* CreateMovieVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A093262F1CDA5E000049EE34 /* CreateMovieVC.swift */; };
 		A0E06A871CCBF84E0057E5B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E06A861CCBF84E0057E5B9 /* AppDelegate.swift */; };
@@ -20,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A02856FB1CDE8C7500D8C706 /* MovieDetailsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieDetailsVC.swift; sourceTree = "<group>"; };
+		A0721BC01CE7B66900D9BBCE /* MovieLinkVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieLinkVC.swift; sourceTree = "<group>"; };
 		A0726A511CD910F300FEE6E2 /* MovieCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		A093262F1CDA5E000049EE34 /* CreateMovieVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateMovieVC.swift; sourceTree = "<group>"; };
 		A0E06A831CCBF84E0057E5B9 /* FavouriteMovie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FavouriteMovie.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -99,6 +103,8 @@
 			children = (
 				A0E06A881CCBF84E0057E5B9 /* ViewController.swift */,
 				A093262F1CDA5E000049EE34 /* CreateMovieVC.swift */,
+				A02856FB1CDE8C7500D8C706 /* MovieDetailsVC.swift */,
+				A0721BC01CE7B66900D9BBCE /* MovieLinkVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -181,6 +187,8 @@
 				A09326301CDA5E000049EE34 /* CreateMovieVC.swift in Sources */,
 				A0E06A8F1CCBF84E0057E5B9 /* FavouriteMovie.xcdatamodeld in Sources */,
 				A0E06A871CCBF84E0057E5B9 /* AppDelegate.swift in Sources */,
+				A02856FC1CDE8C7500D8C706 /* MovieDetailsVC.swift in Sources */,
+				A0721BC11CE7B66900D9BBCE /* MovieLinkVC.swift in Sources */,
 				A0FB61CA1CD1478200AFBA24 /* Movie.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

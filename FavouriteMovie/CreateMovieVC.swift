@@ -9,7 +9,7 @@
 import UIKit
 import CoreData
 
-class CreateMovieVC: UIViewController , UIImagePickerControllerDelegate, UINavigationControllerDelegate{
+class CreateMovieVC: UIViewController , UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate{
     
     @IBOutlet weak var mvtitle: UITextField!
     @IBOutlet weak var mvdescription: UITextField!
@@ -21,6 +21,10 @@ class CreateMovieVC: UIViewController , UIImagePickerControllerDelegate, UINavig
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        mvtitle.delegate = self
+        mvdescription.delegate = self
+        mvlink.delegate = self
+        mvplot.delegate = self
 
         // Do any additional setup after loading the view.
         imagePicker = UIImagePickerController()
@@ -51,6 +55,11 @@ class CreateMovieVC: UIViewController , UIImagePickerControllerDelegate, UINavig
         
         dismissViewControllerAnimated(true, completion: nil)
         
+    }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
     
     func imagePickerController(picker: UIImagePickerController, didFinishPickingImage image: UIImage, editingInfo: [String : AnyObject]?) {

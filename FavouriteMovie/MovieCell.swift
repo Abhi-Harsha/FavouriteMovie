@@ -25,7 +25,7 @@ class MovieCell: UITableViewCell {
     
     func configureCell(movie: Movie) {
         movieTitle.text = movie.title
-        movieDesription.text = movie.description
+        movieDesription.text = movie.moviedescription
         movieLink.text = movie.imdblink
         movieImage.image = movie.getMovieImage()
     }

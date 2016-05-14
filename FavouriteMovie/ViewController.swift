@@ -9,10 +9,10 @@
 import UIKit
 import CoreData
 
-class ViewController: UIViewController , UITableViewDelegate, UITableViewDataSource {
+class ViewController: UIViewController , UITableViewDelegate, UITableViewDataSource{
     
     @IBOutlet weak var tableView: UITableView!
-    
+    var MovieDetails = MovieDetailsVC()
     var movies = [Movie]()
 
     override func viewDidLoad() {
@@ -48,6 +48,18 @@ class ViewController: UIViewController , UITableViewDelegate, UITableViewDataSou
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
+    }
+    
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "Details" {
+            if let cell = sender as? MovieCell {
+                let row = tableView.indexPathForCell(cell)?.row
+                let vc = segue.destinationViewController as? MovieDetailsVC
+                
+                vc?.movie = movies[row!]
+            }
+        }
     }
     
     func getMovieResults() {
