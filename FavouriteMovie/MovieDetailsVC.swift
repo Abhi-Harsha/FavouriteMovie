@@ -40,4 +40,11 @@ class MovieDetailsVC: UIViewController {
         dismissViewControllerAnimated(true, completion: nil)
     }
     
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "MovieLink" {
+            let linkvc = segue.destinationViewController as? MovieLinkVC
+            linkvc?.movieLink = movie?.imdblink
+        }
+    }
 }

@@ -252,7 +252,7 @@
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="10"/>
                                 <state key="normal" title="Click Here"/>
                                 <connections>
-                                    <segue destination="T02-cT-xpe" kind="show" id="Vdq-Oi-7Gu"/>
+                                    <segue destination="T02-cT-xpe" kind="show" identifier="MovieLink" id="Vdq-Oi-7Gu"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g4O-rv-cNZ">
@@ -314,12 +314,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="emW-1T-6dw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2051" y="-1202"/>
+            <point key="canvasLocation" x="-1811" y="-1382"/>
         </scene>
-        <!--View Controller-->
+        <!--Movie LinkVC-->
         <scene sceneID="tcz-Oe-Ary">
             <objects>
-                <viewController id="T02-cT-xpe" sceneMemberID="viewController">
+                <viewController id="T02-cT-xpe" customClass="MovieLinkVC" customModule="FavouriteMovie" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="02p-8w-iYx"/>
                         <viewControllerLayoutGuide type="bottom" id="diJ-4S-iCl"/>
@@ -328,9 +328,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1GH-85-XkR">
+                            <webView contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="1GH-85-XkR">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES"/>
                             </webView>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0V4-CA-l5J">
                                 <rect key="frame" x="20" y="20" width="59" height="30"/>
@@ -339,6 +340,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="15"/>
                                 <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="onBackPressed:" destination="T02-cT-xpe" eventType="touchUpInside" id="9cY-yw-tey"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -351,10 +355,13 @@
                             <constraint firstItem="0V4-CA-l5J" firstAttribute="top" secondItem="02p-8w-iYx" secondAttribute="bottom" id="u83-cA-Rp5"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="linkview" destination="1GH-85-XkR" id="D4v-J9-PtH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w69-J2-f1E" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1227" y="-1367"/>
+            <point key="canvasLocation" x="-1979" y="-833"/>
         </scene>
         <!--Create MovieVC-->
         <scene sceneID="L0m-x4-K5D">
